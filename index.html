@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Bingo</title>
+    
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <header id="header">
+        <div class="title">
+            <h1>Mental Health Bingo Generator!</h1>
+        </div>
+    </header>
+
+    <div id="middle-page">
+        <main id="content">
+            <div class="buttons">
+                <!-- Wstęp -->
+                <section class="options pixel">
+                    <button type="button" class="collapsible" >Options</button>
+                    <p id="options" class="collapsed" style="display: none;">It's alright if you can't finish everything. Remember to be kind to yourself first and foremost! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio iusto doloremque eum, nesciunt placeat consectetur, quam voluptas exercitationem dolores atque quibusdam iure consequuntur autem? Molestias illum molestiae voluptas hic iure!</p>
+                </section>
+
+                <section class="instructions pixel">
+                    <button type="button" class="collapsible">Instructions</button>
+                    <p class="collapsed" style="display: none;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur in veniam nobis unde praesentium eaque possimus suscipit excepturi cupiditate eius. Sequi debitis dolorem ratione exercitationem fugiat in eligendi praesentium itaque.</p>
+                </section>
+            </div>    
+
+
+            <div class="buttons bottom-buttons">
+            <!-- Pobranie PDF -->
+                <section class="generate ">
+                    <button id="generateBingoButton">Generate Your Bingo Card</button>
+                </section>
+
+                <!-- Pobranie PDF -->
+                <section class="download ">
+                    <button id="downloadPDF" onclick="return xepOnline.Formatter.Format('bingo')">Download Your Bingo Card</button>
+                </section>
+            </div>
+
+            <!-- Generator bingo -->
+            <div class="bingo-container" id="content">
+                <!-- Tabela Bingo -->
+                <table id="bingo" class="pixel">
+                    <tr pixel>
+                        <th class="bingo-window"><span>Drink one glass of water</span></th>
+                        <th class="bingo-window"><span>5 minutes of meditation</span></th>
+                        <th class="bingo-window"><span>20 jumping jacks</span></th>
+                        <th class="bingo-window"><span>1 full and healthy meal</span></th>
+                    </tr>
+                    <tr>
+                        <th class="bingo-window"><span>5 minutes of breathing exercise</span></th>
+                        <th class="bingo-window"><span>Drink one glass of water</span></th>
+                        <th class="bingo-window"><span>Do shaking exercise to relieve emotions</span></th>
+                        <th class="bingo-window"><span>1 minute plank</span></th>
+                    </tr>
+                    <tr>
+                        <th class="bingo-window"><span>1 minute plank</span></th>
+                        <th class="bingo-window"><span>5 minutes of meditation</span></th>
+                        <th class="bingo-window"><span>Ask yourself "How am I feeling?"</span></th>
+                        <th class="bingo-window"><span>Drink one glass of water</span></th>
+                    </tr>
+                    <tr>
+                        <th class="bingo-window"><span>Say something kind to yourself</span></th>
+                        <th class="bingo-window"><span>Drink one glass of water</span></th>
+                        <th class="bingo-window"><span>20 jumping jacks</span></th>                        
+                        <th class="bingo-window"><span>5 minutes of sunlight & fresh air</span></th>
+                    </tr>
+                </table>
+            </div>
+        
+        </main>
+    </div>
+
+    <footer>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non maxime cupiditate quidem, laudantium voluptatibus necessitatibus quae deleniti possimus. Aspernatur libero unde minus a quaerat facere obcaecati voluptatem ab corrupti ipsa.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+    <script src="path/to/xepOnline.jqPlugin.js"></script>
+    <script src="xepOnline.jqPlugin.js"></script>
+    <script src="path/to/xepOnline.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Skrypt JS -->
+    <script src="index.js"></script>
+</body>
+</html>
+ 

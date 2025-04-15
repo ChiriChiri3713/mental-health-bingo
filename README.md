@@ -1,1 +1,1 @@
-"# Mental-health-bingo - test" 
+"# Mental-health-bingo" 

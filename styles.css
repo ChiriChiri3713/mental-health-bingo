@@ -1,0 +1,194 @@
+* {
+    /* border: dashed rgb(153, 199, 229) 2px; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Pixel', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+html {
+    background: url(assesments/bright-purple-square-mosaic-textural-background.jpg) no-repeat center fixed;
+    background-size: cover;
+  }
+  
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(42, 86, 140); */
+}
+
+#middle-page {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: rgb(221, 91, 59);
+    border-left: 5px solid rgb(192, 29, 119);
+    border-right: 5px solid rgb(192, 29, 119);
+}
+
+#header {
+    width: 70%;
+    border-left: 5px solid rgb(192, 29, 119);
+    border: 5px solid rgb(192, 29, 119);
+}
+
+.buttons {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    gap: 10px;
+    /* width: 100%; */
+    
+}
+
+footer{
+    /* position: fixed; */
+    bottom: 0;
+    width: 70%;
+    text-align: center;
+    border-left: 5px solid rgb(192, 29, 119);
+    border-right: 5px solid rgb(192, 29, 119);
+}
+
+.bingo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#bingo {
+    border-collapse: collapse; /* Usuwa odstępy między komórkami */
+    /* table-layout: fixed; */
+    width: 80%; /* Dopasowanie tabeli do kontenera */
+}
+
+.bingo-window {
+    border: 1px solid rgb(59, 110, 145); /* Obramowanie komórek */
+    text-align: center;
+    vertical-align: middle; /* Wyśrodkowanie tekstu wewnątrz komórki */
+    position: relative; /* Potrzebne do sztuczki z padding */
+    width: 25%; /* 4 kolumny po 25% szerokości */
+    word-wrap: break-word;
+    overflow: hidden; 
+}
+
+.bingo-window::before {
+    content: ""; /* Pusty element, by wymusić kwadrat */
+    display: block;
+    padding-top: 100%; /* Wysokość równa szerokości */
+}
+
+.bingo-window > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    word-wrap: break-word;
+    font-size: calc(1vw + 0.1vh); 
+    line-height: 1.5;
+}
+
+.title {
+    height: 100vh;
+    background-image: url(./assesments/tło.jpg);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    display: flex;
+    background-image: url(./assesments/tło.jpg);
+    height: 60vh;
+    background-repeat: no-repeat;
+    /* background-position: right bottom; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 3px 3px 1px rgb(253, 255, 171);
+    /* margin-top: 40px; */
+    position: absolute;
+    /* transform: translateX(0%); */
+    top: 12%;
+    line-height: 2;
+}
+
+button {
+    background-color: rgb(253, 255, 171);
+}
+
+
+.pixel {
+    /* width: 50%; */
+    /* height: 50vh; */
+    /* margin: 2em auto; */
+    box-shadow:   -5px 0 0 0 black,
+                   5px 0 0 0 black,
+                   0 -5px 0 0 black,
+                   0 5px 0 0 black;
+  }
+
+
+.collapsible {
+    padding: 10px;
+    /* margin: 10px; */
+}
+
+
+  /* 
+.title {
+    display: flex;
+    background-image: url(./assesments/AnasAbdin.gif);
+    height: 30vh;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+*/
+
+#bingo {
+    border-collapse: separate;
+    border-spacing: 100;
+}
+
+
+th {
+    border: 10px solid black;
+    background-color: rgb(253, 255, 171);
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    border: 10px solid black;
+    /* border-radius: 100%; */
+    /* height: 150px;
+    width: 150px; */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.bottom-buttons button {
+    margin-top: 10px;
+    border: 3px solid black;
+    padding: 10px;
+}
+
